@@ -1,0 +1,284 @@
+*{
+    margin:0; 
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+header
+{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    background: #c9bbcb;
+}
+.logo
+{
+    width: 80%;
+    height: 100%;
+}
+
+#logotipo
+{
+    font-family: 'Anton', sans-serif;
+    color:  #A5678E;
+}
+
+/*Section*/
+section
+{
+    width: 100%;
+    height: auto;
+    background: #E5C1CD;
+    text-align: center;
+}
+.separador
+{
+    height: 100px;
+    width: 100%;
+}
+.botones
+{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+
+.boton
+{
+    width: 60%;
+    height: 150px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10%;
+}
+.boton a
+{
+    margin-top: 40px;
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+    padding: 20px;
+    font-size: 150%;
+    text-decoration: none;
+    color:white;
+}
+#adoptar
+{
+    background: #A5678E;
+}
+#socio
+{
+    background: #BFB8DA;
+}
+#donar
+{
+    background: #7facd6;
+}
+#voluntario
+{
+    background: #33539e;
+}
+/*footer*/
+footer
+{
+    width: 100%;
+    height: auto;
+    background: #323b58;
+    vertical-align: bottom;
+    z-index: 1;
+}
+.izquierdita
+{ 
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+.izquierdita div
+{ 
+    width: 100%; 
+    height: 33%;
+}
+
+.derechita
+{ 
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+.derechita div
+{ 
+    width: 100%;
+    height: 100%;
+}
+.izquierdita a
+{ 
+    color:white;
+    font-size: 90%;
+}
+.derechita p
+{ 
+    color:white;
+    font-size: 90%;
+}
+
+/* estilo adopta */
+.contiene
+{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;   
+}
+.tarjeta
+{
+ 
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.img
+{
+    height: 300px;
+    width: 80%;
+    display: inline-block;
+    margin: 20px;
+}
+img
+{
+    height: 300px;
+    width: 100%;
+}
+.nom
+{
+    display: inline-block;
+    width: 40%;
+    text-align: justify;
+    
+}
+.botoncito
+{
+    display: inline-block;
+    width: 50%;
+}
+.caracteristicas
+{
+
+    height: auto;
+    width: 100%;
+}
+.edad
+{
+    height: 50px;
+    width: 40%;
+    display: inline-block;
+    text-align: justify;
+    
+}
+.sexo
+{
+    height: 50px;
+    width: 50%;
+    display: inline-block;
+}
+.carac
+{
+    width: 91.5%;
+    height: auto;
+    display: inline-block;
+    text-align: justify;
+    
+}
+@media(min-width:600px) and (max-width:1000px) 
+{
+    /*Estilos tablet adopta*/
+    .contiene
+    {
+        width: 49.6%;
+        display: inline-block;
+    }
+}
+@media(min-width:1000px) and (max-width:1440px) 
+{
+    /*Sectiontablet*/
+    .botones
+    {
+        background: black;
+        width: 90%;
+        display: inline-block;
+    }
+    .boton
+    {
+        width: 40%;
+        height: 200px;
+        
+    }
+    .boton a
+    {
+        margin-top: 48px;
+        
+    }
+
+    /*Footer tablet*/
+    .derechita
+    { 
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .izquierdita
+    { 
+        display: inline-block;
+        width: 49%;
+        height: 100%;
+
+    }
+    /*Estilos tablet adopta*/
+    .contiene
+    {
+        width: 49.6%;
+        display: inline-block;
+    }
+    .img
+    {
+        height: 500px;
+    }
+    img
+    {
+        height: 500px;
+    }
+    
+}
+@media(min-width:1440px) 
+{
+    /*SectionPC*/
+    .botones
+    {
+        background: red;
+
+    }
+    /*FooterPC*/
+    .derechita
+    { 
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .izquierdita
+    { 
+        display: inline-block;
+        width: 49%;
+        height: 100%;
+
+    }
+}
+

@@ -1,3 +1,43 @@
 {% extends "basegeneric.html" %}
 {% block content %}
+
+<div class="container">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        {% load static %}
+        <img class="d-block w-100" src="{% static 'Imagenes/patitas.jpeg' %}" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+      </div>
+      <div class="carousel-item">
+        {% load static %}
+        <img class="d-block w-100" src="{% static 'Imagenes/elpepecloid.jpeg' %}" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="botones">
+  <div class="boton" id="adoptar">
+    <a href="{% url 'adopta' %}"><i class="fas fa-paw"></i> Quiero Adoptar</a>
+  </div>
+  <div class="boton" id="socio">
+    <a href=""><i class="far fa-handshake"></i> Quiero ser socio</a>
+  </div>
+  <div class="boton" id="donar">
+    <a href=""><i class="far fa-money-bill-alt"></i> Quiero donar</a>
+  </div>
+  <div class="boton" id="voluntario">
+    <a href=""><i class="far fa-smile-wink"></i> Quiero ser voluntario</a>
+  </div>
+</div>
 {% endblock %}
+
+

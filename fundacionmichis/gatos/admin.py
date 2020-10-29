@@ -1,4 +1,4 @@
 from django.contrib import admin
-from . models import Gatitos
+from . models import Gatito
 # Register your models here.
-admin.site.register(Gatitos)
+admin.site.register(Gatito)

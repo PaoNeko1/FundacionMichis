@@ -1,0 +1,28 @@
+{% extends "basegeneric.html" %}
+{% block content %}
+<div class="adoptar">
+    {% for i in gatos %}
+        <div class="contiene">
+            <div class="col-md">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="tarjeta">
+                            <div class="img"><img class="imagendecard" src="{{ i.imagen.url }}" alt="Gatito" > </div>
+                            <div class="titulos">
+                                <div class="nom"><p class="card-title">{{ i.nombre }}</p></div>
+                                <div class="botoncito"><a href="" class="btn btn-primary"><i class="far fa-heart"></i> Adoptame</a></p></div>
+                            </div>
+                        </div>
+                        <div class="caracteristicas">
+                            <div class="edad">Edad : {{ i.edad }}</div>
+                            <div class="sexo">Sexo : {{ i.sexo }}</div>
+                            <div class="carac"><p class="card-text">{{ i.carac }}</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
