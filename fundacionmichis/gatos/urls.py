@@ -20,4 +20,6 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('adopta/', views.adopta, name='adopta'),
+    path('usuario/<int:cate1>', views.usuario, name='usuario'),
+    path('donar/', views.donar, name='donar'),
 ]

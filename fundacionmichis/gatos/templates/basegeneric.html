@@ -11,7 +11,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'CSS/miestilito.css' %}">  
+    <link rel="stylesheet" href="{% static 'CSS/miestilo.css' %}">  
 </head>
 <body>
     <header>
@@ -28,21 +28,21 @@
                             <div><h2 id="logotipo" ><i class="fas fa-cat"></i> Fundacion Michis</h2></div>
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                            <a class="nav-link" href="{% url 'index' %}">Home</a>
+                        <ul class="menu_XD">
+                            <li class="opciones">
+                            <a  href="{% url 'index' %}">Home</a> 
                             </li>
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#">¿Quienes somos?</a>
+                            <li class="opciones">
+                            <a  href="#quien">¿Quienes somos?</a> 
+                            </li> 
+                            <li class="opciones">
+                            <a  href="#donar_info">¿Que hacemos?</a>
                             </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">¿Que hacemos?</a>
+                            <li class="opciones">
+                            <a  href="#volun">¿Como ayudar?</a>
                             </li>
-                            <li class="nav-item">
-                            <a class="nav-link disabled" href="#">¿Como ayudar?</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link disabled" href="{% url 'adopta' %}">Adopta!</a>
+                            <li class="opciones">
+                            <a  href="{% url 'adopta' %}">Adopta!</a>
                             </li>
                         </ul>
                         </div>

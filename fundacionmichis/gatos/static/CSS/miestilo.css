@@ -24,7 +24,35 @@ header
     font-family: 'Anton', sans-serif;
     color:  #A5678E;
 }
-
+.menu_XD
+{
+    list-style: none;
+}
+.opciones
+{
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+}   
+.opciones a
+{
+    text-decoration: none;
+    font-family: 'Bree Serif', serif; 
+    font-size: 20px; 
+    color: #A5678E;
+}   
+.opciones a:hover
+{
+    background: #323b58;
+    height: 40px;
+    width: 100%;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.5s;
+}  
+        
 /*Section*/
 section
 {
@@ -45,7 +73,6 @@ section
     height: auto;
     padding-top: 30px;
 }
-
 .boton
 {
     width: 60%;
@@ -80,6 +107,58 @@ section
 #voluntario
 {
     background: #33539e;
+}
+#adoptar:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+#socio:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+#donar:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+#voluntario:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+/* INFORMACION */
+.info
+{
+    height: auto;
+    width: 100%;
+}
+.quien, .donar_info, .volun
+{
+    margin-top: 30px;
+}
+.todas
+{
+    border: #E5C1CD solid 10px;
+}
+.quien_titu, .donar_titu, .vol_titu
+{
+    display: inline-block;
+    width: 100%;
+    text-align: justify;
+    height: 60px;
+    padding-top:10px ;
+    font-family: 'Anton', sans-serif; 
+}
+.quien_des, .donar_des, .vol_des
+{
+    display: inline-block;
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
 }
 /*footer*/
 footer
@@ -127,6 +206,7 @@ footer
     color:white;
     font-size: 90%;
 }
+/*INFORMACIONES*/
 
 /* estilo adopta */
 .contiene
@@ -194,6 +274,7 @@ img
     text-align: justify;
     
 }
+
 @media(min-width:600px) and (max-width:1000px) 
 {
     /*Estilos tablet adopta*/
@@ -203,12 +284,36 @@ img
         display: inline-block;
     }
 }
+@media(min-width:900px)
+{
+    /* estilo menu tablet/pc */
+    .separador
+    {
+        height: 130px;
+    }
+    .menu_XD
+    {
+        display: inline-block;
+        width: 680px;
+        height: 100px;
+    }
+    .opciones
+    {
+        width: 19%;
+        height: auto; 
+        display: inline-block;
+    }
+    .opciones a:hover
+    {
+        height: auto;
+        width: 100%;
+    }  
+}
 @media(min-width:1000px) and (max-width:1440px) 
 {
     /*Sectiontablet*/
     .botones
     {
-        background: black;
         width: 90%;
         display: inline-block;
     }
@@ -243,7 +348,7 @@ img
     /*Estilos tablet adopta*/
     .contiene
     {
-        width: 49.6%;
+        width: 49.7%;
         display: inline-block;
     }
     .img
@@ -261,15 +366,26 @@ img
     /*SectionPC*/
     .botones
     {
-        background: red;
-
+        width: 100%;
+        display: inline-block;
     }
+    .boton
+    {
+        width: 20%;
+        height: 200px;
+        
+    }
+    .boton a
+    {
+        margin-top: 50px;
+    }
+
     /*FooterPC*/
     .derechita
     { 
         display: inline-block;
         width: 50%;
-        height: 100%;
+        height: 150;
 
     }
 
@@ -279,6 +395,21 @@ img
         width: 49%;
         height: 100%;
 
+    }
+    /* adopta pc */
+    .contiene
+    {
+        width: 49%;
+        display: inline-block;
+    }
+    .img
+    {
+        height: 650px;
+        background: crimson;
+    }
+    img
+    {
+        height: 650px;
     }
 }
 

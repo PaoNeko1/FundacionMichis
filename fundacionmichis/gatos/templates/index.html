@@ -29,13 +29,38 @@
     <a href="{% url 'adopta' %}"><i class="fas fa-paw"></i> Quiero Adoptar</a>
   </div>
   <div class="boton" id="socio">
-    <a href=""><i class="far fa-handshake"></i> Quiero ser socio</a>
+    <a href="{% url 'usuario' 0 %}"><i class="far fa-handshake"></i> Quiero ser socio</a>
   </div>
   <div class="boton" id="donar">
-    <a href=""><i class="far fa-money-bill-alt"></i> Quiero donar</a>
+    <a href="{% url 'donar' %}"><i class="far fa-money-bill-alt"></i> Quiero donar</a>
   </div>
   <div class="boton" id="voluntario">
-    <a href=""><i class="far fa-smile-wink"></i> Quiero ser voluntario</a>
+    <a href="{% url 'usuario' 1 %}"><i class="far fa-smile-wink"></i> Quiero ser voluntario</a>
+  </div>
+</div>
+
+<div class="info">
+  <div class="quien" id="quien">
+    
+    {% load static %}
+    <div class="quien_img" ><img class="todas" src="{% static 'Imagenes/persona.jpeg' %}"></div>
+    <div class="quien_titu"><h2>¿Quienes Somos?</h2></div>
+    <div class="quien_des">corporación encargada del rescate de animales de compañía que se encuentran en condición de abandono y con condiciones sanitarias deficientes. </div>
+  </div>
+  <div class="donar_info" id="donar_info">
+    
+    {% load static %}
+    <div class="donar_img" ><img class="todas" src="{% static 'Imagenes/miau.jpeg' %}"></div>
+    <div class="donar_titu"><h2>¿Que hacemos?</h2></div>
+    <div class="donar_des">
+      Todo refugio debe ser solo un lugar de paso. Nuestros perritos -y todos los perritos- merecen una vida de amor y cuidados. Aunque siempre le pondremos todo el esfuerzo y corazón para que nuestros pequeños estén bien en el refugio, nuestro principal desafío con cada perrit@ rescatado es que encuentre una familia que le dé una nueva oportunidad de ser feliz </div>
+  </div>
+  <div class="volun" id="volun">
+    
+    {% load static %}
+    <div class="vol_img" ><img class="todas" src="{% static 'Imagenes/Esponjigato.gif' %}"></div>
+    <div class="vol_titu"><h2>¿Como ayudar?</h2></div>
+    <div class="vol_des">¡Hay muchas maneras de ayudar y todas son bienvenidas!</div>
   </div>
 </div>
 {% endblock %}
