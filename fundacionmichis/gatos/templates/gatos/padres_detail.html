@@ -1,0 +1,32 @@
+{% extends "basegeneric.html" %}
+
+{% block content %}
+{% load static %}
+
+
+        <h1 class="page-section-heading text-uppercase text-secondary mb-0" > {{padres.nom}}</h1>
+
+        <div class="col-md-8" style="margin-top: 5%;">
+
+            <h3 class="descripcion text-secondary">Descripción</h3>
+            <br>
+              <p class="texto">{{padres.rut}}</p>
+            <br>
+            <br>
+              <p class="texto">{{padres.fono}}</p>
+            <br>
+            <br>
+              <p class="texto">{{padres.correo}}</p>
+            <br>
+            <br>
+              <p class="texto">{{padres.dire}}</p>
+            <br>
+            <br>
+              <p class="texto">{{padres.idgatos}}</p>
+            <br>
+            <br>
+              <p class="texto">{{padres.idadop}}</p>
+            <br>
+        </div>
+
+{% endblock %}

@@ -11,7 +11,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'CSS/miestilo.css' %}">  
+    <link rel="stylesheet" href="{% static 'CSS/estilos.css' %}">  
 </head>
 <body>
     <header>
@@ -43,6 +43,10 @@
                             </li>
                             <li class="opciones">
                             <a  href="{% url 'adopta' %}">Adopta!</a>
+                            </li>
+                            </li>
+                            <li class="opciones">
+                            <a  href="{% url 'login' %}">Login</a>
                             </li>
                         </ul>
                         </div>

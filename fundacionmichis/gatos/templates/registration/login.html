@@ -1,0 +1,36 @@
+{% extends 'basegeneric.html' %}
+{% block content %}
+
+{% load static %}
+<link href="{% static 'css/miestilo.css' %}" rel="stylesheet">
+
+<div class="masthead container d-flex align-items-center flex-column">
+<div class="login-page">
+  <div class="form">
+<form method="POST" action="{% url 'index' %}">
+{% csrf_token %}
+
+<div>
+    {% if form.errors %}
+    <p>Usuario y/o clave incorrecto. Inténtalo de nuevo.</p>
+    {% endif %}
+  <td > <label class="label"> Usuario : </label> </td>
+  <p></p>
+  <td>{{ form.username }}</td>
+</div>
+<div>
+  <td > <label class="label"> Clave : </label> </td>
+  <p></p>
+  <td>{{ form.password }}</td>
+</div>
+
+<div>
+  <button class="btn btn-primary btn-xl" type="submit" value="login" > Login </button>
+  <input type="hidden" name="next" value="{{ next }}" />
+</div>
+</form>
+  </div>
+</div>
+</div>
+
+{% endblock %}

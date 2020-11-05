@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #llama segunda url de la app gatos
     path('', include('gatos.urls')),
+    path ('accounts/', include('django.contrib.auth.urls')),
 ]
 urlpatterns+= static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)
 if settings.DEBUG: # new

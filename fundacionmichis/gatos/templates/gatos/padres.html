@@ -1,0 +1,11 @@
+{% extends "basegeneric.html" %}
+{% block content %}
+<div class="formulario">
+    <form name="padres" method="GET">
+        {%csrf_token%}
+        {{ form.as_p }}
+    </form>
+</div>
+  
+{% endblock %}
+

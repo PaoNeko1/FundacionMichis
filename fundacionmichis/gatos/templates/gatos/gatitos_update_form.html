@@ -1,0 +1,13 @@
+{% extends "basegeneric.html" %}
+
+
+{% block content %}
+
+    <form method="POST" class="post-form">{% csrf_token %}
+            <div style="font-size: 12px;">
+                {{ form.as_p }}
+            </div>
+        <button type="submit" class="save btn btn-primary btn-xl" style="float: right;   margin-top: 2%">Guardar</button>
+        <br>
+    </form>
+{% endblock %}
