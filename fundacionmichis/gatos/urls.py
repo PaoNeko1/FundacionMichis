@@ -16,19 +16,21 @@ Including another URLconf
 #conectado con views
 from django.urls import path
 from . import views
-
+from django.contrib.auth import login
+from django.contrib.auth.views import logout_then_login
 urlpatterns = [
     path('', views.index, name='index'),
     path('adopta/', views.adopta, name='adopta'),
-    path('usuario/<int:cate1>', views.usuario, name='usuario'),
+    path('voluntario/', views.voluntario, name='voluntario'),
+    path('socio/', views.socio, name='socio'),
     path('donar/', views.donar, name='donar'),
     path('exitoend/', views.exito, name='exito'),
     path('padres/', views.PadresCreate.as_view(), name='padres'),
-    path('exitoend1/', views.exito, name='exito1'),
-    path('usuario/', views.UsuarioCreate.as_view(), name='usuario'),
     path('exitoend2/', views.exito, name='exito2'),
     path('gatitos/', views.GatitosCreate.as_view(), name='gatitos'),
     path('gatitos/<int:pk>/update/', views.GatitosUpdate.as_view(), name='gatitos_update'),
     path('gatitos/<int:pk>/delete/', views.GatitosDelete.as_view(), name='gatitos_delete'),
+    path('login/',login,{'templates_name':'login.html'}, name='login')
+    #path('logout/',logout_then_login, name='logout')
 ]
 

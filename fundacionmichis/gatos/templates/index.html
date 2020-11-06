@@ -6,11 +6,11 @@
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         {% load static %}
-        <img class="d-block w-100" src="{% static 'Imagenes/patitas.jpeg' %}" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+        <img class="d-block w-100" src="{% static 'Imagenes/patitas.jpg' %}" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
       </div>
       <div class="carousel-item">
         {% load static %}
-        <img class="d-block w-100" src="{% static 'Imagenes/elpepecloid.jpeg' %}" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+        <img class="d-block w-100" src="{% static 'Imagenes/elpepecloid.jpg' %}" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -29,13 +29,13 @@
     <a href="{% url 'adopta' %}"><i class="fas fa-paw"></i> Quiero Adoptar</a>
   </div>
   <div class="boton" id="socio">
-    <a href="{% url 'usuario' 0 %}"><i class="far fa-handshake"></i> Quiero ser socio</a>
+    <a href="{% url 'socio'  %}"><i class="far fa-handshake"></i> Quiero ser socio</a>
   </div>
   <div class="boton" id="donar">
     <a href="{% url 'donar' %}"><i class="far fa-money-bill-alt"></i> Quiero donar</a>
   </div>
   <div class="boton" id="voluntario">
-    <a href="{% url 'usuario' 1 %}"><i class="far fa-smile-wink"></i> Quiero ser voluntario</a>
+    <a href="{% url 'voluntario'  %}"><i class="far fa-smile-wink"></i> Quiero ser voluntario</a>
   </div>
 </div>
 
@@ -45,7 +45,7 @@
     {% load static %}
     <div class="quien_img" ><img class="todas" src="{% static 'Imagenes/persona.jpeg' %}"></div>
     <div class="quien_titu"><h2>¿Quienes Somos?</h2></div>
-    <div class="quien_des">corporación encargada del rescate de animales de compañía que se encuentran en condición de abandono y con condiciones sanitarias deficientes. </div>
+    <div class="quien_des">Corporación encargada del rescate de gatitos de compañía que se encuentran en condición de abandono y con condiciones sanitarias deficientes. Brindandoles un nuevo hogar.</div>
   </div>
   <div class="donar_info" id="donar_info">
     
@@ -53,14 +53,14 @@
     <div class="donar_img" ><img class="todas" src="{% static 'Imagenes/miau.jpeg' %}"></div>
     <div class="donar_titu"><h2>¿Que hacemos?</h2></div>
     <div class="donar_des">
-      Todo refugio debe ser solo un lugar de paso. Nuestros perritos -y todos los perritos- merecen una vida de amor y cuidados. Aunque siempre le pondremos todo el esfuerzo y corazón para que nuestros pequeños estén bien en el refugio, nuestro principal desafío con cada perrit@ rescatado es que encuentre una familia que le dé una nueva oportunidad de ser feliz </div>
+      Todo refugio debe ser solo un lugar de paso. Nuestros gatitos -y todos los gatitos- merecen una vida de amor y cuidados. Aunque siempre le pondremos todo el esfuerzo y corazón para que nuestros pequeños estén bien en el refugio, nuestro principal desafío con cada gatito rescatado es que encuentre una familia que le dé una nueva oportunidad de ser feliz </div>
   </div>
   <div class="volun" id="volun">
     
     {% load static %}
     <div class="vol_img" ><img class="todas" src="{% static 'Imagenes/Esponjigato.gif' %}"></div>
     <div class="vol_titu"><h2>¿Como ayudar?</h2></div>
-    <div class="vol_des">¡Hay muchas maneras de ayudar y todas son bienvenidas!</div>
+    <div class="vol_des">¡Hay muchas maneras de ayudar y todas son bienvenidas! Puedes ser parte de nuestros voluntarios, un socio, o donar todo tu cariño y amor para poder crecer y ayudar a mas gatitos.</div>
   </div>
 </div>
 {% endblock %}

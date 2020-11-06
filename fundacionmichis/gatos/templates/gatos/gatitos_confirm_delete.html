@@ -1,20 +1,25 @@
 {% extends "basegeneric.html" %}
 {% block content %}
+<div class="todo">
+    {% if user.is_authenticated  %}{% if user.is_staff %}
 
-                  {% if user.is_authenticated  %}{% if user.is_staff %}
-
-        
-                    <form method="post">{% csrf_token %}
-                        <p>Are you sure you want to delete "{{ gatitos.nombre }}"?</p>
-                        <input type="submit" value="delete">
-                    </form>
-                  
                 
-                  {% else %}<div class="container">
-                        <p class="page-section-heading text-center text-uppercase text-secondary mb-0">Usted no tiene los permisos necesarios para realizar esta acción!!</p>
-                            </div>
-                    {% endif %}{% else %}<div class="container">
-                        <p class="page-section-heading text-center text-uppercase text-secondary mb-0">Usted no tiene los permisos necesarios para realizar esta acción!!</p>
-                            </div>{% endif %}
+    <form method="post">{% csrf_token %}
+        <div class="caja">
+            <img class="img_eliminar" src="{{ gatitos.imagen.url }}"> 
+        </div>
+        <p class="label">¿Desea Eliminar a "{{ gatitos.nombre }}"?</p>
+        <input type="submit" class="btn btn-primary btn-xl" value="Eliminar">
+    </form>
+  
+
+  {% else %}<div class="container">
+        <p class="page-section-heading text-center text-uppercase text-secondary mb-0">Usted no tiene los permisos necesarios para realizar esta acción!!</p>
+            </div>
+    {% endif %}{% else %}<div class="container">
+        <p class="page-section-heading text-center text-uppercase text-secondary mb-0">Usted no tiene los permisos necesarios para realizar esta acción!!</p>
+            </div>{% endif %}
+</div>
+                  
                   
 {% endblock %}

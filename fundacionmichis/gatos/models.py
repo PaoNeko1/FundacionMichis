@@ -21,22 +21,6 @@ class Gatitos(models.Model):
     def get_absolute_url(self):
         return reverse('exito2')
 
-class Usuario(models.Model):
-    rut=models.CharField(primary_key=True,max_length=9,help_text='Ingrese Rut ')
-    nom=models.CharField(max_length=50, help_text='Ingrese Nombre')
-    contra=models.CharField(max_length=100, help_text='Ingrese Contraseña')
-    fono=models.IntegerField(help_text='Ingrese telefono de contacto')
-    correo=models.CharField(max_length=100,help_text='Ingrese Correo')
-    cate=models.CharField(max_length=50,help_text='Ingrese si es Donador, Socio o Voluntario')
-
-    class Meta:
-        ordering=['nom']
-    
-    def __str__(self):
-        return self.rut
-
-    def get_absolute_url(self):
-        return reverse('exito1')
 
 class Padres(models.Model):
     rut=models.CharField(max_length=9,help_text='Ingrese Rut ')

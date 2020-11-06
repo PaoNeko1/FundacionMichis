@@ -1,5 +1,5 @@
 from django import forms
-from . models import Gatitos, Padres, Usuario
+from . models import Gatitos, Padres
 
 class PadresForm(forms.ModelForm):
     rut = forms.CharField(label='Rut',max_length=9, widget=forms.TextInput(
@@ -69,45 +69,15 @@ class GatitosForm(forms.ModelForm):
             'class':'form-control'
         }
     ))
-    imagen = forms.ImageField(label='imagen')
+    imagen = forms.ImageField(label='imagen',
+            widget=forms.ClearableFileInput(
+            attrs={
+                'class':'form-control' 
+            }
+            ))
+
 
     class Meta:
         model = Gatitos
-        fields = '__all__'
+        fields = ('id','nombre','edad','carac','sexo','estado','imagen')
 
-class UsuariosForm(forms.ModelForm):
-    rut = forms.CharField(label='Rut',max_length=9, widget=forms.TextInput(
-        attrs={
-            'class':'form-control'
-        }
-    ))
-    nom = forms.CharField(label='Nombre',max_length=50, widget=forms.TextInput(
-        attrs={
-            'class':'form-control'
-        }
-    ))
-    contra = forms.CharField(label='contraseña',max_length=100, widget=forms.TextInput(
-        attrs={
-            'class':'form-control'
-        }
-    ))
-    correo = forms.CharField(label='Correo',max_length=9, widget=forms.TextInput(
-        attrs={
-            'class':'form-control'
-        }
-    ))
-    fono = forms.IntegerField(label='Telefono', widget=forms.TextInput(
-        attrs={
-            'class':'form-control'
-        }
-    ))
-    cate = forms.CharField(label='categorias',max_length=50, widget=forms.TextInput(
-        attrs={
-            'class':'form-control'
-        }
-    ))
-    
-
-    class Meta:
-        model = Usuario
-        fields = '__all__'

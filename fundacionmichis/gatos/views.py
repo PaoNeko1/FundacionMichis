@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from . models import Gatitos, Padres, Usuario
+from . models import Gatitos, Padres
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from django.views import generic
@@ -16,9 +16,11 @@ def adopta(request):
     gatos=Gatitos.objects.all()
     return render(request,'adopta.html', context={'gatos':gatos}) 
 
-def usuario(request, cate1):
-    cate=cate1
-    return render(request,'usuario.html', context={'cate':cate})
+def voluntario(request):
+    return render(request,'voluntario.html')
+
+def socio(request):
+    return render(request,'socio.html')
 
 def donar(request):
     return render(request,'donar.html')
@@ -59,19 +61,3 @@ class GatitosUpdate(UpdateView):
 
 def exito2(request):
     return render(request,'exito2.html') 
-
-class UsuarioDelete(DeleteView):
-    model = Usuario
-    success_url = reverse_lazy('index')
-
-class UsuarioDetailView(generic.DetailView):
-    model = Usuario
-
-
-class UsuarioCreate(CreateView):
-    model = Usuario
-    fields = '__all__'
-
-
-def exito1(request):
-    return render(request,'exito1.html') 

@@ -3,11 +3,54 @@
 
 {% block content %}
 
-    <form method="POST" class="post-form">{% csrf_token %}
-            <div style="font-size: 12px;">
-                {{ form.as_p }}
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        <div class="label">
+            <td > <label class="label"> Rut : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.rut }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Nombre : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.nom }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Telefono : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.fono }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Correo : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.correo }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Direccion : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.dire }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> ID gato : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.idgatos }}
+        </div>
+        <div class="oculto">
+            <div class="label">
+                <td > <label class="label"> ID adopcion : </label> </td>
             </div>
-        <button type="submit" class="save btn btn-primary btn-xl" style="float: right;   margin-top: 2%">Guardar</button>
-        <br>
+            <div class="caja">
+                {{ form.idadop }}
+            </div>
+        </div>
+        <div class="boton1">
+            <button type="submit" class="save btn btn-primary btn-xl">Guardar</button>
+        </div>
     </form>
 {% endblock %}

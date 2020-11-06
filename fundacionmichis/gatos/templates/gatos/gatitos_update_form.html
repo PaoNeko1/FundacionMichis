@@ -4,10 +4,52 @@
 {% block content %}
 
     <form method="POST" class="post-form">{% csrf_token %}
-            <div style="font-size: 12px;">
-                {{ form.as_p }}
+        <div class="label">
+            <td > <label class="label"> ID : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.id }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Nombre : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.nombre }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Edad : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.edad }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Caracteristicas: </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.carac }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Sexo : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.sexo }}
+        </div>
+        <div class="label">
+            <td > <label class="label"> Imagen : </label> </td>
+        </div>
+        <div class="caja">
+            {{ form.imagen }}
+        </div>
+
+            <div class="label">
+                <td > <label class="label"> Estado : </label> </td>
             </div>
-        <button type="submit" class="save btn btn-primary btn-xl" style="float: right;   margin-top: 2%">Guardar</button>
-        <br>
+            <div class="caja">
+                {{ form.estado }}
+            </div>
+
+        <div class="boton1">
+            <button type="submit" class="save btn btn-primary btn-xl">Guardar</button>
+        </div>
     </form>
 {% endblock %}
