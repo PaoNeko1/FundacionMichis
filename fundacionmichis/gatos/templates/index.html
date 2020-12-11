@@ -1,6 +1,6 @@
 {% extends "basegeneric.html" %}
 {% block content %}
-
+<!--CARRUSEL-->
 <div class="container">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
@@ -23,7 +23,7 @@
     </a>
   </div>
 </div>
-
+<!--BOTONES-->
 <div class="botones">
   <div class="boton" id="adoptar">
     <a href="{% url 'adopta' %}"><i class="fas fa-paw"></i> Quiero Adoptar</a>
@@ -41,7 +41,7 @@
 
 <div class="info">
   <div class="quien" id="quien">
-    
+    <!--INFO-->
     {% load static %}
     <div class="quien_img" ><img class="todas" src="{% static 'Imagenes/persona.jpeg' %}"></div>
     <div class="quien_titu"><h2>¿Quienes Somos?</h2></div>

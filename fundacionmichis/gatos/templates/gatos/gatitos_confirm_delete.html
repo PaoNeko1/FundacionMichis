@@ -1,9 +1,13 @@
+
+<!--ELIMINAR GATITO-->
 {% extends "basegeneric.html" %}
 {% block content %}
 <div class="todo">
+
+    <!--PERMISOS USUARIOS-->
     {% if user.is_authenticated  %}{% if user.is_staff %}
 
-                
+    <!--"FORMULARIO" ELIMINAR-->
     <form method="post">{% csrf_token %}
         <div class="caja">
             <img class="img_eliminar" src="{{ gatitos.imagen.url }}"> 

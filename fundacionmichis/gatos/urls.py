@@ -18,6 +18,8 @@ from django.urls import path
 from . import views
 from django.contrib.auth import login
 from django.contrib.auth.views import logout_then_login
+
+#PATH QUE CONECTA
 urlpatterns = [
     path('', views.index, name='index'),
     path('adopta/', views.adopta, name='adopta'),
@@ -31,6 +33,5 @@ urlpatterns = [
     path('gatitos/<int:pk>/update/', views.GatitosUpdate.as_view(), name='gatitos_update'),
     path('gatitos/<int:pk>/delete/', views.GatitosDelete.as_view(), name='gatitos_delete'),
     path('login/',login,{'templates_name':'login.html'}, name='login')
-    #path('logout/',logout_then_login, name='logout')
 ]
 

@@ -1,6 +1,7 @@
 from django import forms
 from . models import Gatitos, Padres
 
+#PARA CREAR EL FORMULARIO PADRES
 class PadresForm(forms.ModelForm):
     rut = forms.CharField(label='Rut',max_length=9, widget=forms.TextInput(
         attrs={
@@ -38,6 +39,8 @@ class PadresForm(forms.ModelForm):
         model = Padres
         fields = '__all__'
 
+
+#PARA CREAR EL FORMULARIO GATITOS
 class GatitosForm(forms.ModelForm):
     id = forms.IntegerField(label='id', widget=forms.TextInput(
         attrs={

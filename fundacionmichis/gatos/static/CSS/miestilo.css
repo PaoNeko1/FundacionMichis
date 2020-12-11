@@ -1,3 +1,4 @@
+/*ESTILOS PARA LA PAGINA*/
 *{
     margin:0; 
     padding:0;
@@ -343,13 +344,13 @@ img
         width:100%;
         display: inline-block;
     }
-    /*ELIMINAR*/
+    /*ELIMINAR TABLET*/
     .img_eliminar
     {
         width: 50%;
     }
 
-    /*LOGIN*/
+    /*LOGIN TABLET*/
     .todo
     {
         height: 575px;
@@ -360,7 +361,7 @@ img
         width: 60%;
     }
 
-    /*Estilos info*/
+    /*Estilos info tablet*/
     .quien
     {
         display: inline-block;
@@ -387,7 +388,7 @@ img
         margin: 0;
         float: right;
     }
-    /*DONACIONES*/
+    /*DONACIONES TABLET*/
     .donacion
     {
         display: inline-block;
@@ -450,13 +451,13 @@ img
         height: auto;
         width: 170%;
     }  
-    /*ELIMINAR*/
+    /*ELIMINAR PC*/
     
     .img_eliminar
     {
         width: 50%;
     }
-    /*LOGIN TABLET*/
+    /*LOGIN PC*/
     .todo
     {
         height: 470px;
@@ -468,7 +469,7 @@ img
     }
 
 
-    /*Sectiontablet*/
+    /*Sectionpc*/
     .botones
     {
         width: 90%;
@@ -512,7 +513,7 @@ img
         margin: 0;
         float: right;
     }
-    /*DONACIONES*/
+    /*DONACIONES PC*/
     .donacion
     {
         display: inline-block;
@@ -532,7 +533,7 @@ img
     }
 
 
-    /*Footer tablet*/
+    /*Footer pc*/
     .derechita
     { 
         display: inline-block;
@@ -548,7 +549,7 @@ img
         height: 100%;
 
     }
-    /*Estilos tablet adopta*/
+    /*Estilos pc adopta*/
     .contiene
     {
         width: 33%;
@@ -585,7 +586,7 @@ img
         height: auto;
         width: 170%;
     }  
-    /*ELIMINAR*/
+    /*ELIMINAR PC*/
     
     .img_eliminar
     {
@@ -652,7 +653,7 @@ img
         float: right;
     }
 
-    /*DONACIONES*/
+    /*DONACIONES PC*/
     .donacion
     {
         display: inline-block;

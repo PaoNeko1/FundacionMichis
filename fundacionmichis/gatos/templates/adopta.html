@@ -1,8 +1,11 @@
 {% extends "basegeneric.html" %}
+
+<!--PAGINA ADOPTA-->
 {% block content %}
 
 <div class="adoptar">
     <h1>Adopciones</h1>
+    <!--AUTENTICACION USUARIOS-->
             {% if user.is_authenticated  %}{% if user.is_staff %}
 
             <div class="botoncito1">
@@ -10,12 +13,14 @@
             </div>
             
             {% else %}{% endif %}{% else %}{% endif %}
+    <!--FOR QUE MUESTRA LOS GATITOS-->
     {% for i in gatos %}
         <div class="contiene">
             <div class="col-md">
                 <div class="card text-center">
                     <div class="card-body">
                         <div class="tarjeta">
+                            <!--AUTENTICACION BOTONES-->
                                 {% if user.is_authenticated  %}{% if user.is_staff %}
 
                                     <div class="botoncito2">

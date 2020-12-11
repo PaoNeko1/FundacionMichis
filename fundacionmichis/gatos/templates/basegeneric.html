@@ -12,9 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     {% load static %}
     <link rel="stylesheet" href="{% static 'CSS/miestilo.css' %}">  
+
+    {% load pwa %}
+
+    {% progressive_web_app_meta %}
+
+
 </head>
 <body>
     <header>
+        <!--MENU-->
         <div class="encabezado">
             
             <div class="menu">
@@ -69,6 +76,7 @@
         
 
     <section>
+        <!--LO QUE VA VARIANDO-->
         <div class="separador"> <a href="">separa</a></div>
         {% block content %}
         {% endblock %}
@@ -76,7 +84,7 @@
     </section>
 
     <footer>
-        
+        <!--FOOTER-->
         <div class="foot">
             <div class=" izquierdita">
     
@@ -108,3 +116,6 @@
 <!--Admin-->
 <!--Administrador-->
 <!--duoc2020-->
+<!--Usuario-->
+<!--Cliente-->
+<!--papasfritas1-->
